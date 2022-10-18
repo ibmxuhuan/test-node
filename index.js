@@ -36,8 +36,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 app.use(express.json({ limit: '50mb' }));
 
 app.post('/api/management/orderInfo/order/xml', function (req, res) {
-  console.log('req=>', req)
-  console.log('req.headers', req.headers)
+  console.log('req.headers=>', req.headers)
+  console.log('req.headers.referer', req.headers.referer)
   res.send('success')
 });
 
