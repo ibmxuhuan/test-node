@@ -29,16 +29,17 @@ app.use(function (req, res, next) {
   }
 });
 
-app.post('/api/management/orderInfo/order/xml', function (req, res) {
-  console.log('req=>', req)
-  console.log('req.headers', req.headers)
-  res.send('success')
-});
 app.use(cookieParser());
 const bodyParser = require('body-parser')
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 app.use(express.json({ limit: '50mb' }));
+
+app.post('/api/management/orderInfo/order/xml', function (req, res) {
+  console.log('req=>', req)
+  console.log('req.headers', req.headers)
+  res.send('success')
+});
 
 const server = http.createServer(app);
 server.listen(8080, '0.0.0.0')
