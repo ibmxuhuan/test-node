@@ -1,0 +1,23 @@
+{
+  "name": "test-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibmxuhuan/test-node.git"
+  },
+  "dependencies": {
+    "express": "~4.16.1",
+    "cookie-parser": "~1.4.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibmxuhuan/test-node/issues"
+  },
+  "homepage": "https://github.com/ibmxuhuan/test-node#readme"
+}
